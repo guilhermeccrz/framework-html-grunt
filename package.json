@@ -9,7 +9,9 @@
     "grunt-contrib-jasmine": "^0.8.0",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-uglify": "^0.6.0",
-    "grunt-contrib-watch": "^0.6.1"
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jasmine-runner": "^0.6.0",
+    "phantomjs": "^1.9.1-0"
   },
   "main": "Gruntfile.js",
   "scripts": {
@@ -18,6 +20,7 @@
   "author": "Guilherme Cruz",
   "license": "ISC",
   "dependencies": {
-    "grunt": "^0.4.5"
+    "grunt": "^0.4.5",
+    "phantomjs": "^1.9.1-0"
   }
 }

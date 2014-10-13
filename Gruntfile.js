@@ -56,10 +56,22 @@ module.exports = function(grunt) {
 
       dist: {
         src: 'sass/screen.scss',
-       // dest:'build/styles/screen.css'
+       dest:'build/styles/screen.css'
       }
 
     },
+
+
+
+ jasmine: {
+    pivotal: {
+      src: ['js/jquery.js','jasmine/src/*.js'],
+      options: {
+        specs: 'jasmine/spec/*Spec.js',
+        helpers: 'jasmine/spec/*Helper.js'
+      }
+    }
+  },
 
    /* cssmin: {
         compress: {
@@ -95,9 +107,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-jasmine');
 
   // Default task.
-  grunt.registerTask('default', ['jshint','uglify','compass']);
+  grunt.registerTask('default', ['jshint','uglify','compass','jasmine']);
     //grunt.registerTask('default', ['jshint', 'nodeunit']);
 
 };
