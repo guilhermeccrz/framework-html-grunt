@@ -15,6 +15,7 @@
     "wsh"           : true,   // Windows Scripting Host.
 
     "jquery"        : true,
+
     //"ender"         : true,
     "prototypejs"   : false,
     "mootools"      : false,
@@ -24,6 +25,10 @@
         //"exampleVar",
         //"anotherCoolGlobal",
         //"iLoveDouglas"
+
+        "jQuery",
+        "Backbone",
+        "_"
     ],
 
 

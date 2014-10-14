@@ -13,7 +13,10 @@ module.exports = function(grunt) {
     jshint: {
       files: ['js/script.js'],
       options: {
-        jshintrc:'.jshintrc.js'/*
+        jshintrc:'.jshintrc.js',
+
+
+        /*
         curly: true,
         eqeqeq: true,
         immed: true,
@@ -29,6 +32,7 @@ module.exports = function(grunt) {
           jQuery: true
         }*/
       },
+   
       gruntfile: {
         src: 'Gruntfile.js'
       },
@@ -65,8 +69,15 @@ module.exports = function(grunt) {
 
  jasmine: {
     pivotal: {
-      src: ['js/jquery.js','jasmine/src/*.js'],
+      src: ['js/script.js'],
       options: {
+        vendor:[
+
+                  'js/underscore-min.js',
+                  'js/jquery.js',
+                  'js/backbone-min.js'
+         
+        ],
         specs: 'jasmine/spec/*Spec.js',
         helpers: 'jasmine/spec/*Helper.js'
       }

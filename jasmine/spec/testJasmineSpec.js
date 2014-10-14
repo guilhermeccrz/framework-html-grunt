@@ -1,15 +1,14 @@
-describe("should execute the callback function on success",function(){
+describe("should test backbone",function(){
 
-	it("xml ok",function(){
+	//var HelloView = testr('js/script.js',{});
 
-		spyOn($,"ajax").and.callFake(function(options){
-			options.success();
-		});
+	it("h1 exist",function(){
 
+	var helloView = new HelloView();	
 
-		var callback = jasmine.createSpy();
-		testJasmine('',callback);
-		expect(callback).toHaveBeenCalled();
+	var el = $('body h1').is(":visible");
+	expect(el).toBe(true);
+
 
 
 	});
