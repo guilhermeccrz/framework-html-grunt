@@ -1,4 +1,4 @@
 grunt-test
 ==========
 
-Full functional grunt test framework for daily use
+Full functional grunt test framework for daily use, Test Unitary
